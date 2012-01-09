@@ -11,7 +11,7 @@
 
 ### Creating the environment ###
 
-Create a virtual python enviroment for the project.
+Create a virtual python environment for the project.
 If you're not using virtualenv or virtualenvwrapper you may skip this step.
 
 #### For virtualenvwrapper ####
