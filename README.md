@@ -5,7 +5,7 @@
 - python >= 2.5
 - pip
 - virtualenv/wrapper (optional)
-- foreman
+- foreman (gem)
 
 ## Installation ##
 
@@ -38,7 +38,7 @@ Edit file ```.env```
 
 ### Sync database ###
 
-```python manage.py syncdb```
+```foreman run python {{ project_name }}/manage.py syncdb```
 
 ## Running ##
 
