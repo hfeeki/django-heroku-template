@@ -1,11 +1,12 @@
 # -*- coding: utf-8 -*-
 import os
 from urlparse import urlparse, uses_netloc
+boolean = lambda value: bool(int(value))
 local_path = lambda path: os.path.join(os.path.dirname(__file__), path)
 uses_netloc.append('postgres')
 uses_netloc.append('redis')
 
-DEBUG = os.environ.get('DEBUG', False)
+DEBUG = boolean(os.environ.get('DEBUG', 0))
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
