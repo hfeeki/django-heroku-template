@@ -23,9 +23,9 @@ DATABASES = {
         'PASSWORD': url.password,
         'HOST': url.hostname,
         'PORT': url.port,
+        'ENGINE': 'django.db.backends.postgresql_psycopg2'
     }
 }
-DATABASES['default']['ENGINE'] = 'django.db.backends.postgresql_psycopg2'
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
