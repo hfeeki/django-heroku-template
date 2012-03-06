@@ -5,7 +5,8 @@
 - python >= 2.5
 - pip
 - virtualenv/wrapper (optional)
-- foreman
+- foreman (gem)
+- heroku (gem)
 
 ## Installation ##
 
@@ -32,13 +33,21 @@ If you're not using virtualenv or virtualenvwrapper you may skip this step.
 
 ```pip install -r requirements.txt```
 
+### Create app at heroku ###
+
+```heroku apps:create -s cedar {{ project_name}}```
+
+Add redis addon to your heroku app
+ 
+```heroku addons:add redistogo:nano```
+
 ### Configure project ###
 
 Edit file ```.env```
 
 ### Sync database ###
 
-```python manage.py syncdb```
+```foreman run python {{ project_name }}/manage.py syncdb```
 
 ## Running ##
 
