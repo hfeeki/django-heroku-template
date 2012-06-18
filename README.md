@@ -37,6 +37,11 @@ If you're not using virtualenv or virtualenvwrapper you may skip this step.
 
 ```heroku apps:create -s cedar {{ project_name}}```
 
+### Setup addons ###
+
+Add sentry addon to your heroku app, to enable exception logging (optional)
+
+```heroku addons:add sentry:developer```
 
 ### Configure project ###
 

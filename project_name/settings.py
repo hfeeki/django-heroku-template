@@ -119,6 +119,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'django.contrib.admin',
     'gunicorn',
+    'raven.contrib.django'
 )
 
 # A sample logging configuration. The only tangible logging
